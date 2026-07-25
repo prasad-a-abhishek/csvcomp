@@ -1,3 +1,5 @@
+LICENSE
+README.md
 pyproject.toml
 src/csvcomp/__init__.py
 src/csvcomp/cli.py
