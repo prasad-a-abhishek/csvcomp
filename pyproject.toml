@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csvcomp"
+version = "0.1.0"
+description = "Semantic CSV↔CSV diff (schema + rows + cells) with zero runtime dependencies."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "repo-builder"}]
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    "Topic :: Text Processing :: Markup",
+]
+# Intentionally zero runtime dependencies — the spec forbids any.
+# Every module in src/csvcomp uses only the Python standard library.
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+
+[project.scripts]
+csvcomp = "csvcomp.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/prasad-a-abhishek/csvcomp"
+Source = "https://github.com/prasad-a-abhishek/csvcomp"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+csvcomp = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

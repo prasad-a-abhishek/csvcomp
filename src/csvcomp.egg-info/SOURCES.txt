@@ -1,0 +1,14 @@
+pyproject.toml
+src/csvcomp/__init__.py
+src/csvcomp/cli.py
+src/csvcomp/diff.py
+src/csvcomp/errors.py
+src/csvcomp/format.py
+src/csvcomp/py.typed
+src/csvcomp.egg-info/PKG-INFO
+src/csvcomp.egg-info/SOURCES.txt
+src/csvcomp.egg-info/dependency_links.txt
+src/csvcomp.egg-info/entry_points.txt
+src/csvcomp.egg-info/requires.txt
+src/csvcomp.egg-info/top_level.txt
+tests/test_csvcomp.py

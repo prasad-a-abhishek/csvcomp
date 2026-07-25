@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: csvcomp
+Version: 0.1.0
+Summary: Semantic CSV↔CSV diff (schema + rows + cells) with zero runtime dependencies.
+Author: repo-builder
+License: MIT
+Project-URL: Homepage, https://github.com/prasad-a-abhishek/csvcomp
+Project-URL: Source, https://github.com/prasad-a-abhishek/csvcomp
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Topic :: Text Processing :: Markup
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Requires-Dist: pytest>=7.0; extra == "test"
