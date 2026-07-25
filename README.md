@@ -35,7 +35,7 @@ third-party CSV parser.
 The package is not yet on PyPI. From a clean clone:
 
 ```bash
-pip install git+https://github.com/prasad-a-abhishek/csvcomp.git
+pip install csvcomp
 ```
 
 For local development:
